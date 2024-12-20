@@ -17,7 +17,7 @@ const MailForm = () => {
         if (form.formState.isSubmitSuccessful) {
             toast.success('メール送信成功')
         }
-    }, [form.formState.isSubmitSuccessful])
+    }, [form.formState.isSubmitting])
 
     return (
     <Form {...form}>
